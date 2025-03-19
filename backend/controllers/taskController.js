@@ -27,7 +27,7 @@ const addTask = async (req, res) => {
 };
 
 // Update Task
-const updatetask = async (req, res) => {
+const updateTask = async (req, res) => {
   const { title, description, completed, deadline } = req.body;
   try {
     const task = await Task.findById(req.params.id);
